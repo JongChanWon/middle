@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:controller="kr.or.ddit.shop.view.admin.NoticeController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tb_noticeView" layoutX="18.0" layoutY="128.0" prefHeight="382.0" prefWidth="914.0">
+         <columns>
+            <TableColumn fx:id="colNo" prefWidth="144.0" text="번호" />
+            <TableColumn fx:id="colTitle" minWidth="0.0" prefWidth="580.0" text="제목" />
+            <TableColumn fx:id="colDate" prefWidth="189.0" text="날짜" />
+         </columns>
+      </TableView>
+      <Text fill="#115222" layoutX="18.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="공지사항" textAlignment="CENTER" wrappingWidth="914.0000104904175">
+         <font>
+            <Font name="Malgun Gothic Bold" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_reg" layoutX="544.0" layoutY="524.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #115222;" text="등록하기" textFill="WHITE" />
+      <Button fx:id="btn_revise" layoutX="651.0" layoutY="524.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #115222;" text="수정하기" textFill="WHITE" />
+      <Button fx:id="btn_delete" layoutX="758.0" layoutY="524.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #115222;" text="삭제하기" textFill="WHITE" />
+      <Button fx:id="btn_home" layoutX="864.0" layoutY="524.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #115222;" text="홈으로" textFill="WHITE" />
+      <Button fx:id="btn_common" layoutX="54.0" layoutY="31.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #115222;" text="공통" textFill="WHITE" />
+      <Button fx:id="btn_company" layoutX="169.0" layoutY="31.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #115222;" text="업체" textFill="WHITE" />
+   </children>
+</AnchorPane>

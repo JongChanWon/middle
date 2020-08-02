@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.shop.view.home.HomeController">
+   <children>
+      <AnchorPane layoutY="-6.0" prefHeight="57.0" prefWidth="1280.0" style="-fx-background-color: #115222;">
+         <children>
+            <Text fill="WHITE" layoutX="59.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHANYNE">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="189.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OKKAGE">
+               <font>
+                  <Font name="Malgun Gothic" size="25.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="btnHome"  onMouseClicked="#goMain" fitHeight="35.0" fitWidth="54.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@이미지/홈.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtf_search" layoutX="306.0" layoutY="18.0" style="-fx-background-color: white;" />
+            <Button fx:id="btnSearch" layoutX="482.0" layoutY="17.0" mnemonicParsing="false" text="검색" />
+         </children>
+      </AnchorPane>
+      <HBox layoutX="916.0" layoutY="8.0" prefHeight="33.0" prefWidth="363.0">
+         <children>
+            <Button fx:id="btnRank" mnemonicParsing="false" onAction="#goMain" style="-fx-background-color: #115222;" text="랭킹 /" textFill="WHITE">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#goMain" style="-fx-background-color: #115222;" text="업데이트 /" textFill="WHITE">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBrand" mnemonicParsing="false" onAction="#goMain" style="-fx-background-color: #115222;" text="브랜드 /" textFill="WHITE">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCodi" mnemonicParsing="false" onAction="#goMain" style="-fx-background-color: #115222;" text="코디 /" textFill="WHITE">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEvent" mnemonicParsing="false" onAction="#goMain" style="-fx-background-color: #115222;" text="이벤트" textFill="WHITE">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutY="50.0" prefHeight="29.0" prefWidth="1280.0">
+         <children>
+            <Button fx:id="btnFirst" mnemonicParsing="false" onAction="#goMain" prefHeight="30.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-color: #115222;" text="회원가입">
+               <font>
+                  <Font name="Malgun Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSecond" mnemonicParsing="false" onAction="#goMain" prefHeight="30.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-color: #115222;" text="로그인">
+               <font>
+                  <Font name="Malgun Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnThird" mnemonicParsing="false" onAction="#goMain" prefHeight="30.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-color: #115222;" text="ID/PW찾기">
+               <font>
+                  <Font name="Malgun Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFourth" mnemonicParsing="false" onAction="#goMain" prefHeight="30.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-color: #115222;" text="장바구니">
+               <font>
+                  <Font name="Malgun Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFifth" mnemonicParsing="false" onAction="#goMain" prefHeight="30.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-color: #115222;" text="주문배송조회">
+               <font>
+                  <Font name="Malgun Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSixth" mnemonicParsing="false" onAction="#goMain" prefHeight="30.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-color: #115222;" text="자주묻는질문">
+               <font>
+                  <Font name="Malgun Gothic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSeventh" mnemonicParsing="false" onAction="#goMain" prefHeight="30.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-color: #115222;" text="공지사항">
+               <font>
+                  <Font name="Malgun Gothic" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="19.0" layoutY="97.0" prefHeight="317.0" prefWidth="150.0" style="-fx-border-color: #115222; -fx-background-color: #115222;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="CATEGORY">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="23.0" />
+               </VBox.margin>
+            </Text>
+            <Button fx:id="btnBest" mnemonicParsing="false" onAction="#goMain" prefHeight="41.0" prefWidth="150.0" style="-fx-border-color: #115222; -fx-background-color: white; -fx-border-width: 1.5;" text="인기">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="btnTop" mnemonicParsing="false" onAction="#goMain" prefHeight="41.0" prefWidth="150.0" style="-fx-border-color: #115222; -fx-background-color: white; -fx-border-width: 1.5;" text="상의">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="btnOuter" mnemonicParsing="false" onAction="#goMain" prefHeight="41.0" prefWidth="150.0" style="-fx-border-color: #115222; -fx-background-color: white; -fx-border-width: 1.5;" text="아우터">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="btnPants" mnemonicParsing="false" onAction="#goMain" prefHeight="41.0" prefWidth="150.0" style="-fx-border-color: #115222; -fx-background-color: white; -fx-border-width: 1.5;" text="바지">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="btnSkirt" mnemonicParsing="false" onAction="#goMain" prefHeight="41.0" prefWidth="150.0" style="-fx-border-color: #115222; -fx-background-color: white; -fx-border-width: 1.5;" text="스커트">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="btnAccessory" mnemonicParsing="false" onAction="#goMain" prefHeight="41.0" prefWidth="150.0" style="-fx-border-color: #115222; -fx-background-color: white; -fx-border-width: 1.5;" text="악세사리">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="btnShoes" mnemonicParsing="false" onAction="#goMain" prefHeight="46.0" prefWidth="150.0" style="-fx-border-color: #115222; -fx-background-color: white; -fx-border-width: 1.5;" text="신발">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="19.0" layoutY="413.0" prefHeight="153.0" prefWidth="144.0" style="-fx-border-color: #115222; -fx-border-width: 1.5;">
+         <children>
+            <ImageView fx:id="btnChatbot" onMouseClicked="#goMain" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#goMain" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@이미지/ㅎ챗봇.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnCart" onMouseClicked="#goMain" fitHeight="75.0" fitWidth="75.0" layoutX="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@이미지/장바구니.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRecentOne"  onMouseClicked="#goMain" fitHeight="70.0" fitWidth="70.0" layoutX="4.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@이미지/반팔.jpg" />
+               </image>
+            </ImageView>
+            <!--  -->
+            <ImageView fx:id="btnRecentTwo"  onMouseClicked="#goMain" fitHeight="70.0" fitWidth="70.0" layoutX="76.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@이미지/목도리.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:controller="kr.or.ddit.shop.view.prod.DisplayProdController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox fx:id="comSort" layoutX="765.0" layoutY="20.0" prefWidth="150.0" />
+      <HBox layoutX="15.0" layoutY="60.0" prefHeight="180.0" prefWidth="880.0">
+         <children>
+            <ImageView fx:id="img1" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="img2" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="img3" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="img3" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="img5" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox layoutX="15.0" layoutY="325.0" prefHeight="180.0" prefWidth="880.0">
+         <children>
+            <ImageView fx:id="img6" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="img7" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="img8" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="img9" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="img10" fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <VBox layoutX="15.0" layoutY="251.0" prefHeight="65.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="txtBrand1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtName1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+            <Text fx:id="txtPrice1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Malgun Gothic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="200.0" layoutY="251.0" prefHeight="65.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="txtBrand2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtName2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+            <Text fx:id="txtPrice2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Malgun Gothic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="384.0" layoutY="251.0" prefHeight="65.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="txtBrand3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtName3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+            <Text fx:id="txtPrice3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Malgun Gothic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="572.0" layoutY="251.0" prefHeight="65.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="txtBrand4" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtName4" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+            <Text fx:id="txtPrice4" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Malgun Gothic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="757.0" layoutY="251.0" prefHeight="65.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="txtBrand5" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtName5" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+            <Text fx:id="txtPrice5" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Malgun Gothic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="24.0" layoutY="515.0" prefHeight="65.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="txtBrand6" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtName6" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+            <Text fx:id="txtPrice6" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Malgun Gothic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="200.0" layoutY="515.0" prefHeight="65.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="txtBrand7" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtName7" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+            <Text fx:id="txtPrice7" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Malgun Gothic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="384.0" layoutY="515.0" prefHeight="65.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="txtBrand8" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtName8" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+            <Text fx:id="txtPrice8" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Malgun Gothic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="572.0" layoutY="515.0" prefHeight="65.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="txtBrand9" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtName9" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+            <Text fx:id="txtPrice9" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Malgun Gothic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="757.0" layoutY="515.0" prefHeight="65.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="txtBrand10" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtName10" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+            <Text fx:id="txtPrice10" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Malgun Gothic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
