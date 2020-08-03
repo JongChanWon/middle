@@ -9,7 +9,6 @@ import com.ibatis.sqlmap.client.SqlMapClient;
 import kr.or.ddit.shop.util.SqlMapClientFactory;
 import kr.or.ddit.shop.vo.admin.AdmwrtVO;
 import kr.or.ddit.shop.vo.admin.BlackVO;
-import kr.or.ddit.shop.vo.member.MemAllVO;
 
 public class AdminDaoImpl implements IAdminDao{
 
@@ -72,7 +71,7 @@ public class AdminDaoImpl implements IAdminDao{
 		
 		return cnt;
 	}
-////////////////공지사항/////////////
+////////////////怨듭��궗�빆/////////////
 	@Override
 	public List<AdmwrtVO> getCommonNotice() {
 
@@ -129,5 +128,5 @@ public class AdminDaoImpl implements IAdminDao{
 		return cnt;
 	}
 
-//adfasfad
+
 }
