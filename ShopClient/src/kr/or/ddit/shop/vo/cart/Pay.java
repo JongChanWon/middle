@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class Pay implements Serializable{
 	private int pay_no;
-	private int coup_no;
 	private int order_no;
+	private int coup_no;
 	private String pay_how;
 	private int point_use;
 	private int pay_price;

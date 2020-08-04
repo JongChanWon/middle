@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class ViewHistVO implements Serializable{
 
-	private int mem_no   ;
+	private int memall_no   ;
 	private int prod_no  ;
 	private String view_date;
 	
@@ -14,17 +14,17 @@ public class ViewHistVO implements Serializable{
 
 	public ViewHistVO(int mem_no, int prod_no, String view_date) {
 		super();
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 		this.prod_no = prod_no;
 		this.view_date = view_date;
 	}
 
 	public int getMem_no() {
-		return mem_no;
+		return memall_no;
 	}
 
 	public void setMem_no(int mem_no) {
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 	}
 
 	public int getProd_no() {
@@ -45,7 +45,7 @@ public class ViewHistVO implements Serializable{
 
 	@Override
 	public String toString() {
-		return "ViewHistVO [mem_no=" + mem_no + ", prod_no=" + prod_no + ", view_date=" + view_date + "]";
+		return "ViewHistVO [mem_no=" + memall_no + ", prod_no=" + prod_no + ", view_date=" + view_date + "]";
 	}
 	
 	

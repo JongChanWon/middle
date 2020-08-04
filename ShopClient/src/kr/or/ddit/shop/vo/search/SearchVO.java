@@ -2,8 +2,8 @@ package kr.or.ddit.shop.vo.search;
 
 import java.io.Serializable;
 
-public class SearchVO implements Serializable{ // 검색할때 
-	private int sc_no; // 검색
+public class SearchVO implements Serializable{ // 寃��깋�븷�븣 
+	private int sc_no;
 	private int mem_no;
 	private String sc_word; 
 	private String sc_date;

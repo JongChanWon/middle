@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class CartVO implements Serializable{
 
 	private int prod_no ;
-	private int mem_no  ;
+	private int memall_no  ;
 	private int cart_qty;
 	
 	public CartVO() {
@@ -15,7 +15,7 @@ public class CartVO implements Serializable{
 	public CartVO(int prod_no, int mem_no, int cart_qty) {
 		super();
 		this.prod_no = prod_no;
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 		this.cart_qty = cart_qty;
 	}
 
@@ -28,11 +28,11 @@ public class CartVO implements Serializable{
 	}
 
 	public int getMem_no() {
-		return mem_no;
+		return memall_no;
 	}
 
 	public void setMem_no(int mem_no) {
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 	}
 
 	public int getCart_qty() {
@@ -45,7 +45,7 @@ public class CartVO implements Serializable{
 
 	@Override
 	public String toString() {
-		return "CartVO [prod_no=" + prod_no + ", mem_no=" + mem_no + ", cart_qty=" + cart_qty + "]";
+		return "CartVO [prod_no=" + prod_no + ", mem_no=" + memall_no + ", cart_qty=" + cart_qty + "]";
 	}
 	
 	

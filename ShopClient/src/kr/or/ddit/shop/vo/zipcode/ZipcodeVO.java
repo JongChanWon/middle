@@ -7,6 +7,20 @@ public class ZipcodeVO {
 	private String dong;
 	private String bunji;
 	
+	
+	
+	
+	public ZipcodeVO() {
+		super();
+	}
+	public ZipcodeVO(String zipcode, String sido, String gugun, String dong, String bunji) {
+		super();
+		this.zipcode = zipcode;
+		this.sido = sido;
+		this.gugun = gugun;
+		this.dong = dong;
+		this.bunji = bunji;
+	}
 	public String getZipcode() {
 		return zipcode;
 	}
