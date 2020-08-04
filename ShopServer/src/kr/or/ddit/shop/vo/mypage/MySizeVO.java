@@ -3,8 +3,8 @@ package kr.or.ddit.shop.vo.mypage;
 import java.io.Serializable;
 
 public class MySizeVO implements Serializable{          
-	private int mem_no;
-	private int my_length;
+	private int memall_no;
+	//private int my_length;
 	private int my_shoulder;
 	private int my_breast;
 	private int my_arm;
@@ -17,11 +17,11 @@ public class MySizeVO implements Serializable{
 	
 	}
 	
-	public MySizeVO(int mem_no, int my_length, int my_shoulder, int my_breast, int my_arm, int my_hip, int my_thigh,
+	public MySizeVO(int mem_no, int my_shoulder, int my_breast, int my_arm, int my_hip, int my_thigh,
 			int my_rise, int my_feet) {
 		super();
-		this.mem_no = mem_no;
-		this.my_length = my_length;
+		this.memall_no = mem_no;
+		//this.my_length = my_length;
 		this.my_shoulder = my_shoulder;
 		this.my_breast = my_breast;
 		this.my_arm = my_arm;
@@ -32,17 +32,17 @@ public class MySizeVO implements Serializable{
 	}
 	
 	public int getMem_no() {
-		return mem_no;
+		return memall_no;
 	}
 	public void setMem_no(int mem_no) {
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 	}
-	public int getMy_length() {
+	/*public int getMy_length() {
 		return my_length;
 	}
 	public void setMy_length(int my_length) {
 		this.my_length = my_length;
-	}
+	}*/
 	public int getMy_shoulder() {
 		return my_shoulder;
 	}
@@ -88,7 +88,7 @@ public class MySizeVO implements Serializable{
 
 	@Override
 	public String toString() {
-		return "MySizeVO [mem_no=" + mem_no + ", my_length=" + my_length + ", my_shoulder=" + my_shoulder
+		return "MySizeVO [mem_no=" + memall_no + ", my_shoulder=" + my_shoulder
 				+ ", my_breast=" + my_breast + ", my_arm=" + my_arm + ", my_hip=" + my_hip + ", my_thigh=" + my_thigh
 				+ ", my_rise=" + my_rise + ", my_feet=" + my_feet + "]";
 	}

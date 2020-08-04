@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class MemCouponVO implements Serializable{
 	private int coup_no;
-	private int mem_no;
+	private int memall_no;
 	
 	public MemCouponVO() {
 		
@@ -13,7 +13,7 @@ public class MemCouponVO implements Serializable{
 	public MemCouponVO(int coup_no, int mem_no) {
 		super();
 		this.coup_no = coup_no;
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 	}
 	
 	public int getCoup_no() {
@@ -23,15 +23,15 @@ public class MemCouponVO implements Serializable{
 		this.coup_no = coup_no;
 	}
 	public int getMem_no() {
-		return mem_no;
+		return memall_no;
 	}
 	public void setMem_no(int mem_no) {
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 	}
 
 	@Override
 	public String toString() {
-		return "MemCouponVO [coup_no=" + coup_no + ", mem_no=" + mem_no + "]";
+		return "MemCouponVO [coup_no=" + coup_no + ", mem_no=" + memall_no + "]";
 	}
 	
 	
