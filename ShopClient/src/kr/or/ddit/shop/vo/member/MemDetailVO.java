@@ -8,13 +8,14 @@ public class MemDetailVO implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private int mem_no;
+	private int memall_no;
 	private String mem_mail;
 	private String mem_pw;
 	private String mem_name;
 	private String mem_nick;
 	private String mem_birth;
 	private String mem_phone;
+	private String mem_zip;
 	private String mem_addr1;
 	private String mem_addr2;
 	private int mem_point;
@@ -23,8 +24,7 @@ public class MemDetailVO implements Serializable{
 	private String mem_gender;
 	private int mem_price;
 	private String mem_picaddr;
-	private String mem_zip;
-	private int order_no;
+	//private int order_no;
 	private String mem_who;
 	
 	
@@ -37,16 +37,15 @@ public class MemDetailVO implements Serializable{
 		this.mem_mail = mem_mail;
 		this.mem_pw = mem_pw;
 	}
-
 	
 
-	public int getOrder_no() {
+	/*public int getOrder_no() {
 		return order_no;
 	}
 
 	public void setOrder_no(int order_no) {
 		this.order_no = order_no;
-	}
+	}*/
 
 	public String getMem_who() {
 		return mem_who;
@@ -73,10 +72,10 @@ public class MemDetailVO implements Serializable{
 	}
 	
 	public int getMem_no() {
-		return mem_no;
+		return memall_no;
 	}
 	public void setMem_no(int mem_no) {
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 	}
 	public String getMem_name() {
 		return mem_name;
@@ -161,7 +160,7 @@ public class MemDetailVO implements Serializable{
 	
 	@Override
 	public String toString() {
-		return "MemDetailVO [mem_no=" + mem_no + ", mem_mail=" + mem_mail + ", mem_pw=" + mem_pw 
+		return "MemDetailVO [mem_no=" + memall_no + ", mem_mail=" + mem_mail + ", mem_pw=" + mem_pw 
 				+ ", mem_name=" + mem_name + ", mem_nick=" + mem_nick + ", mem_birth="
 				+ mem_birth + ", mem_phone=" + mem_phone + ", mem_addr1=" + mem_addr1 + ", mem_addr2=" + mem_addr2
 				+ ", mem_point=" + mem_point + ", mem_rank=" + mem_rank + ", mem_age=" + mem_age + ", mem_gender="

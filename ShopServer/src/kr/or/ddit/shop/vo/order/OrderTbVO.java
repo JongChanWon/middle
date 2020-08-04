@@ -4,15 +4,15 @@ import java.io.Serializable;
 
 public class OrderTbVO implements Serializable{
 	private int order_no;
-	private int mem_no;
+	private int memall_no;
 	private String order_date;
 	private int order_price;
 	private String order_status;
 	private String del_name;
 	private String del_phone;
+	private String del_zip;
 	private String del_addr1;
 	private String del_addr2;
-	private int del_zip;
 	private String del_msg;
 	
 	public OrderTbVO() {
@@ -20,10 +20,10 @@ public class OrderTbVO implements Serializable{
 	}
 	
 	public OrderTbVO(int order_no, int mem_no, String order_date, int order_price, String order_status, String del_name,
-			         String del_phone, String del_addr1, String del_addr2, int del_zip, String del_msg) {
+			         String del_phone, String del_zip, String del_addr1, String del_addr2, String del_msg) {
 		super();
 		this.order_no = order_no;
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 		this.order_date = order_date;
 		this.order_price = order_price;
 		this.order_status = order_status;
@@ -42,10 +42,10 @@ public class OrderTbVO implements Serializable{
 		this.order_no = order_no;
 	}
 	public int getMem_no() {
-		return mem_no;
+		return memall_no;
 	}
 	public void setMem_no(int mem_no) {
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 	}
 	public String getOrder_date() {
 		return order_date;
@@ -96,17 +96,17 @@ public class OrderTbVO implements Serializable{
 		this.del_msg = del_msg;
 	}
 
-	public int getDel_zip() {
+	public String getDel_zip() {
 		return del_zip;
 	}
 	
-	public void setDel_zip(int del_zip) {
+	public void setDel_zip(String del_zip) {
 		this.del_zip = del_zip;
 	}
 	
 	@Override
 	public String toString() {
-		return "OrderTbVO [order_no=" + order_no + ", mem_no=" + mem_no + ", order_date=" + order_date
+		return "OrderTbVO [order_no=" + order_no + ", mem_no=" + memall_no + ", order_date=" + order_date
 				+ ", order_price=" + order_price + ", order_status=" + order_status + ", del_name=" + del_name
 				+ ", del_phone=" + del_phone + ", del_addr1=" + del_addr1 + ", del_addr2=" + del_addr2  
 				+ ", del_zip=" + del_zip + ", del_msg="	+ del_msg + "]";

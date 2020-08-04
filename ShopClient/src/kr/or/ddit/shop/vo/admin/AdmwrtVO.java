@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class AdmwrtVO implements Serializable{
 
 	
-	private int admwrt_no;
+	private int admwrt_no    ;
 	private String admwrt_title ;
 	private String admwrt_date  ;
 	private String admwrt_cont  ;

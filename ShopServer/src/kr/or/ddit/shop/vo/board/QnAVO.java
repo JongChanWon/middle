@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class QnAVO implements Serializable{
 	private int qna_no;
-	private int mem_no;
+	private int memall_no;
 	private int prod_no;
 	private String qna_cont;
 	private String qna_date;
@@ -17,7 +17,7 @@ public class QnAVO implements Serializable{
 	public QnAVO(int qna_no, int mem_no, int prod_no, String qna_cont, String qna_date) {
 		super();
 		this.qna_no = qna_no;
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 		this.prod_no = prod_no;
 		this.qna_cont = qna_cont;
 		this.qna_date = qna_date;
@@ -25,7 +25,7 @@ public class QnAVO implements Serializable{
 
 	@Override
 	public String toString() {
-		return "QnAVO [qna_no=" + qna_no + ", mem_no=" + mem_no + ", prod_no=" + prod_no + ", qna_cont=" + qna_cont
+		return "QnAVO [qna_no=" + qna_no + ", mem_no=" + memall_no + ", prod_no=" + prod_no + ", qna_cont=" + qna_cont
 				+ ", qna_date=" + qna_date + "]";
 	}
 	
@@ -36,10 +36,10 @@ public class QnAVO implements Serializable{
 		this.qna_no = qna_no;
 	}
 	public int getMem_no() {
-		return mem_no;
+		return memall_no;
 	}
 	public void setMem_no(int mem_no) {
-		this.mem_no = mem_no;
+		this.memall_no = mem_no;
 	}
 	public int getProd_no() {
 		return prod_no;

@@ -7,9 +7,9 @@ public class BrandVO implements Serializable{
 	private int brand_no    ;
 	private String brand_regno ;
 	private String brand_name  ;
+	private String brand_zip;
 	private String brand_addr1 ;
 	private String brand_addr2 ;
-	private int brand_zip;
 	private String brand_phone ;
 	private String brand_status;
 	
@@ -20,7 +20,7 @@ public class BrandVO implements Serializable{
 	
 	
 	public BrandVO(int brand_no, String brand_regno, String brand_name, String brand_addr1, String brand_addr2,
-			int brand_zip, String brand_phone, String brand_status) {
+			String brand_zip, String brand_phone, String brand_status) {
 		super();
 		this.brand_no = brand_no;
 		this.brand_regno = brand_regno;
@@ -102,12 +102,12 @@ public class BrandVO implements Serializable{
 		this.brand_status = brand_status;
 	}
 
-	public int getBrand_zip() {
+	public String getBrand_zip() {
 		return brand_zip;
 	}
 	
 	
-	public void setBrand_zip(int brand_zip) {
+	public void setBrand_zip(String brand_zip) {
 		this.brand_zip = brand_zip;
 	}
 
