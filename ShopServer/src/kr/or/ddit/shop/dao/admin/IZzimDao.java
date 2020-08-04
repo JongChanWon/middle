@@ -4,7 +4,7 @@ import java.util.List;
 
 import kr.or.ddit.shop.vo.mypage.ZzimVO;
 
-public interface IZzim {
+public interface IZzimDao {
 	public int insertZzim(ZzimVO vo);
 	
 	public int deleteAllZzim(int zzim_no);

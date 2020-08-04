@@ -4,7 +4,7 @@ import java.util.List;
 
 import kr.or.ddit.shop.vo.coupon.CouponVO;
 
-public interface ICoupon {
+public interface ICouponDao {
 	public int insertCoupon(CouponVO vo);
 	
 	public int addCoupon(CouponVO vo);

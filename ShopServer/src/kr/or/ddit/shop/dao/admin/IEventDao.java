@@ -4,7 +4,7 @@ import java.util.List;
 
 import kr.or.ddit.shop.vo.admin.EventVO;
 
-public interface IEvent {
+public interface IEventDao {
 	public int insertEvent(EventVO vo);
 	
 	public int addEvent(EventVO vo);

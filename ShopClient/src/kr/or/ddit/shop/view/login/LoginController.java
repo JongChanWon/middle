@@ -63,7 +63,9 @@ public class LoginController implements Initializable{
 			
 			String memID = inputID.getText();
 			String memPW = inputPW.getText();
+			
 			MemDetailVO authUser = new MemDetailVO(memID, memPW);
+			
 			
 			MemDetailVO mv = null;
 			try {

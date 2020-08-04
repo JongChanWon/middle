@@ -1,5 +1,5 @@
 package kr.or.ddit.shop.dao.admin;
 
-public interface IPay {
+public interface ISearchDao {
 
 }

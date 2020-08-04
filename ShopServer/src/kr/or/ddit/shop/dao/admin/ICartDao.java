@@ -4,7 +4,7 @@ import java.util.List;
 
 import kr.or.ddit.shop.vo.cart.CartVO;
 
-public interface ICart {
+public interface ICartDao {
 	public int addToCart(int prod_no);
 	
 	public int deleteFromCart(int prod_no);

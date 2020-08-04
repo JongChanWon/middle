@@ -2,7 +2,7 @@ package kr.or.ddit.shop.dao.admin;
 
 import kr.or.ddit.shop.vo.codi.CodiDetailVO;
 
-public interface ICodiDetail {
+public interface ICodiDetailDao {
 	
 	public int insertCodiDetail(CodiDetailVO vo);
 	

@@ -2,7 +2,7 @@ package kr.or.ddit.shop.dao.admin;
 
 import kr.or.ddit.shop.vo.board.QnAVO;
 
-public interface IQnA {
+public interface IQnADao {
 	public int insertQna(QnAVO vo);
 	
 	public int updateQna(QnAVO vo);

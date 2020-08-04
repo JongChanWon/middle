@@ -4,9 +4,9 @@ import java.util.List;
 
 import kr.or.ddit.shop.vo.member.MemDetailVO;
 
-public interface IMember {
+public interface IMemberDao {
 
-	//¿©±â vo·Î ¹Þ´Â °Í ÁÖÀÇ
+	//ï¿½ï¿½ï¿½ï¿½ voï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	public MemDetailVO selectMemDetail(MemDetailVO vO);
 	
 	public List<MemDetailVO> selectAllMember();

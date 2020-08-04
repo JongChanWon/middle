@@ -2,7 +2,7 @@ package kr.or.ddit.shop.dao.admin;
 
 import kr.or.ddit.shop.vo.mypage.MySizeVO;
 
-public interface IMysize {
+public interface IMysizeDao {
 	public int insertMysize(MySizeVO vo);
 	
 	public int updateMysize(MySizeVO vo);

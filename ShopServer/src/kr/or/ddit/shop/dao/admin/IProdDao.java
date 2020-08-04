@@ -4,7 +4,7 @@ import java.util.List;
 
 import kr.or.ddit.shop.vo.prod.ProdVO;
 
-public interface IProd {
+public interface IProdDao {
 	public int insertProd(ProdVO vo);
 	
 	public int updateProd(ProdVO vo);
