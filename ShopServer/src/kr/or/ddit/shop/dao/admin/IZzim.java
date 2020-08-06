@@ -11,7 +11,7 @@ public interface IZzim {
 	
 	public int deleteZzim(int zzim_no);
 	
-	public List<ZzimVO> selectAllZzim();
+	public List<ZzimVO> selectAllZzim(); //나의 찜 모두 선택
 	
-	public ZzimVO selectZzim(int zzim_no);
+	public ZzimVO selectZzim(int zzim_no); //찜 하나 선택
 }
