@@ -1,5 +1,6 @@
 package kr.or.ddit.shop.view.login;
 
+import java.awt.Window;
 import java.net.URL;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -10,8 +11,10 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import kr.or.ddit.shop.service.login.ILoginService;
@@ -48,13 +51,21 @@ public class FindPwController implements Initializable{
 			e.printStackTrace();
 		}
 		
+		// 확인 눌렀을때 정보 일치하면 아이디를 메일로 보냄
 		btnConfirm.setOnAction(e->{
-			if(inputID.getText().equals(" ") || inputName.getText().equals(" ") || inputHp.getText().equals(" ") ||
+			//System.out.println("ok");
+			if(inputID.getText().equals("") || inputName.getText().equals("") || inputHp.getText().equals(" ") ||
 			   inputID == null || inputName == null || inputHp == null) {
 				
 				errMsg("Input Error", "정보를 입력하지 않았습니다. 다시입력해주세요!!");
 				return;
 			}
+		});
+		// 취소 눌렀을 때 전화면으로 이동
+		btnCancel.setOnAction(e->{
+			Stage stage = (Stage) btnCancel.getScene().getWindow();
+			stage.close();
+			
 		});
 		
 	}

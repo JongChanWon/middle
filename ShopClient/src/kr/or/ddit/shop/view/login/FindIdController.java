@@ -12,8 +12,12 @@ import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
 import kr.or.ddit.shop.service.login.ILoginService;
 import kr.or.ddit.shop.vo.member.MemAllVO;
+import kr.or.ddit.shop.vo.member.MemDetailVO;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 
 public class FindIdController implements Initializable{
@@ -25,9 +29,9 @@ public class FindIdController implements Initializable{
 	
 	private Registry reg;
 	private ILoginService loginService;
-	private MemAllVO mv = new MemAllVO();
+	private MemDetailVO mv = new MemDetailVO();
 	
-	List<MemAllVO> list = new ArrayList<MemAllVO>();
+	List<MemDetailVO> list = new ArrayList<MemDetailVO>();
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -41,7 +45,38 @@ public class FindIdController implements Initializable{
 		}
 		
 		btnConfirm.setOnAction(e->{
+			if(inputHp.getText().equals("") || inputName.getText().equals("") ||
+			   inputHp == null || inputName == null) {
+				
+				errMsg("Input Error", "정보를 입력하지 않았습니다. 다시입력해주세요!!");
+				return;
+			}
 			
+			if(inputHp.getText().equals(mv)) {
+				
+			}
+		});
+		
+		btnCancel.setOnAction(e->{
+			Stage stage = (Stage) btnCancel.getScene().getWindow();
+			stage.close();
 		});
 	}
+	
+	private void errMsg(String headerText, String msg) {
+		Alert errAlert = new Alert(AlertType.ERROR);
+        errAlert.setTitle("에러 !!");
+        errAlert.setHeaderText(headerText);
+        errAlert.setContentText(msg);
+        errAlert.showAndWait();		
+	}
+	
+	
+	 private void infoMsg(String headerText, String msg) {
+         Alert errAlert = new Alert(AlertType.INFORMATION);
+         errAlert.setTitle("정보 확인!!");
+         errAlert.setHeaderText(headerText);
+         errAlert.setContentText(msg);
+         errAlert.showAndWait();
+      }
 }

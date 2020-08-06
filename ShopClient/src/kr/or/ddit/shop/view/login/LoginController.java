@@ -36,7 +36,7 @@ public class LoginController implements Initializable{
 	@FXML ImageView btnKakao;
 	@FXML ImageView btnNaver;
 	@FXML Button btnRegi;
-	@FXML Button btnFIndID;
+	@FXML Button btnFindID;
 	@FXML Button btnFindPW;
 	
 	List<MemAllVO> list = new ArrayList<>();
@@ -77,7 +77,7 @@ public class LoginController implements Initializable{
 			
 			if(mv!=null) {
 				//회원이 있단 얘기
-				if(mv.getMem_pw().equals(authUser.getMem_pw())) {
+				if(mv.getMem_pw().equals(mv.getMem_pw())) {
 					//성공
 					System.out.println("정상진입");
 				}else {
@@ -86,7 +86,7 @@ public class LoginController implements Initializable{
 				}
 			}else {
 				//회원이 없단 얘기
-				System.out.println("회원 없음 원종찬 씨벌련");
+				System.out.println("회원 없음");
 			}
 			
 			
@@ -121,8 +121,8 @@ public class LoginController implements Initializable{
 			
 		});
 		// 아이디 찾기
-		btnFIndID.setOnAction(e1->{
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("SearchID.fxml"));
+		btnFindID.setOnAction(e1->{
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("FindID.fxml"));
 			
 			try {
 				AnchorPane root = loader.load();
@@ -137,8 +137,8 @@ public class LoginController implements Initializable{
 		});
 		
 		// 비번찾기
-		btnFIndID.setOnAction(e1->{
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("SearchPW.fxml"));
+		btnFindPW.setOnAction(e1->{
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("FindPW.fxml"));
 			
 			try {
 				AnchorPane root = loader.load();
