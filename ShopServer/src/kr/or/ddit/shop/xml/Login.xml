@@ -34,15 +34,15 @@
 							  
 	</select>
 	<!-- 아이디 찾기 -->
-	<select id="LoginFindId" resultClass="mdetailVO">
-		SELECT * FROM memall WHERE mem_name=#mem_name# 
+	<select id="LoginFindId" resultClass="mdetailVO" parameterClass="mdetailVO">
+		SELECT * FROM memdetail WHERE mem_name=#mem_name# 
 							   AND mem_phone=#mem_phone#
 	</select>
 	<!-- 비밀번호 찾기 -->
-	<select id="LoginFindPw" resultClass="mdetailVO">
-		SELECT * FROM memall WHERE mem_mail=#mem_mail# 
-							   AND mem_name=#mem_name# 
-							   AND mem_phone=#mem_phone#
+	<select id="LoginFindPw" resultClass="mdetailVO" parameterClass="mdetailVO">
+		SELECT * FROM memdetail WHERE mem_mail=#mem_mail# 
+							    AND mem_name=#mem_name# 
+							    AND mem_phone=#mem_phone#
 	</select>
 
 </sqlMap>

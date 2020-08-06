@@ -11,12 +11,12 @@
       lazyLoadingEnabled="true" maxRequests="32" maxSessions="10"
       maxTransactions="5" useStatementNamespaces="true" />
 	
-   <typeAlias alias="mAllVO" type="kr.or.ddit.shop.vo.member.MemAllVO"/>
-   <typeAlias alias="mdetailVO" type="kr.or.ddit.shop.vo.member.MemDetailVO"/>
-   <typeAlias alias="zipVO" type="kr.or.ddit.shop.vo.zipcode.ZipcodeVO"/>
+   
+   	<typeAlias alias="zipVO" type="kr.or.ddit.shop.vo.zipcode.ZipcodeVO"/>
    
 	<!-- 종찬 -->
-	
+	<typeAlias alias="mAllVO" type="kr.or.ddit.shop.vo.member.MemAllVO"/>
+   	<typeAlias alias="mdetailVO" type="kr.or.ddit.shop.vo.member.MemDetailVO"/>
 	
 	<!-- 송현 -->
 	
