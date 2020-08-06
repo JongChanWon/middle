@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class CartVO implements Serializable{
 
-	private int prod_no ;
 	private int memall_no  ;
+	private int opt_no ;
 	private int cart_qty;
 	
 	public CartVO() {
@@ -14,17 +14,17 @@ public class CartVO implements Serializable{
 
 	public CartVO(int prod_no, int mem_no, int cart_qty) {
 		super();
-		this.prod_no = prod_no;
+		this.opt_no = prod_no;
 		this.memall_no = mem_no;
 		this.cart_qty = cart_qty;
 	}
 
 	public int getProd_no() {
-		return prod_no;
+		return opt_no;
 	}
 
 	public void setProd_no(int prod_no) {
-		this.prod_no = prod_no;
+		this.opt_no = prod_no;
 	}
 
 	public int getMem_no() {
@@ -45,7 +45,7 @@ public class CartVO implements Serializable{
 
 	@Override
 	public String toString() {
-		return "CartVO [prod_no=" + prod_no + ", mem_no=" + memall_no + ", cart_qty=" + cart_qty + "]";
+		return "CartVO [prod_no=" + opt_no + ", mem_no=" + memall_no + ", cart_qty=" + cart_qty + "]";
 	}
 	
 	
