@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+         PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+         "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+         
+<sqlMap>
+
+	<!-- 공통 공지사항 조회 -->
+	<select id="getCommonNotice" resultClass="cf_NoticeVO">
+		select * from admwrt
+		where admwrt_what = '공통공지사항'
+	</select>
+	
+	<!-- 업체 공지사항 조회 -->
+	<select id="getCompanyNotice" resultClass="cf_NoticeVO">
+		select * from admwrt
+		where admwrt_what = '업체공지사항'
+	</select>
+	
+	<!-- 공지사항 추가 -->
+	<update id="insertNotice" parameterClass="cf_NoticeVO">
+		insert into admwrt(admwrt_no, admwrt_title, admwrt_date, admwrt_cont, admwrt_what)
+		values(seq_admwrt, #admwrt_title#, sysdate, #admwrt_cont#, #admwrt_what#)
+	</update>
+	
+	<!-- 공지사항 삭제 -->
+	<update id="deleteNotice" parameterClass="cf_NoticeVO">
+		delete from admwrt
+		where admwrt_no = #admwrt_no#
+	</update>
+
+
+
+
+
+
+
+	<!-- 모든 블랙리스트 조회  -->
+	<select id="getAllBlackMem" resultClass="cf_BlackVO">
+		
+		select * from black
+	
+	</select>
+	
+	<!-- 블랙리스트 추가  -->
+	<update id="insertBlackMem" parameterClass="cf_BlackVO">
+		
+		insert into black(mem_no, black_indate, black_why)
+		values(#mem_no#, sysdate, #black_why#)
+		
+	</update>
+	
+	<!-- 블랙리스트 삭제 -->
+	<update id="deleteBlackMem" parameterClass="cf_BlackVO">
+	
+		delete from black where mem_no = #mem_no#
+	
+	</update>
+</sqlMap>

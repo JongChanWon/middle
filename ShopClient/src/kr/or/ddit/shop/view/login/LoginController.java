@@ -27,6 +27,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 
+/*
+ * 로그인 부분
+ * 
+ * 로그인을 컨트롤 하는 기능
+ */
+
 public class LoginController implements Initializable{
 
 	@FXML ImageView btnHome;
@@ -58,6 +64,7 @@ public class LoginController implements Initializable{
 		} catch (NotBoundException e) {
 			e.printStackTrace();
 		}
+		
 		// 아이디, 비번 미입력시 에러창
 		btnLogin.setOnAction(e->{
 			
@@ -120,6 +127,7 @@ public class LoginController implements Initializable{
 			
 			
 		});
+		
 		// 아이디 찾기
 		btnFindID.setOnAction(e1->{
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("FindID.fxml"));
@@ -170,5 +178,7 @@ public class LoginController implements Initializable{
          errAlert.setContentText(msg);
          errAlert.showAndWait();
       }
+	 
+	
 	
 }

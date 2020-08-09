@@ -45,6 +45,10 @@ public class FindIdController implements Initializable{
 		}
 		
 		btnConfirm.setOnAction(e->{
+			
+			String memHp = inputHp.getText();
+			String memName = inputName.getText();
+			
 			if(inputHp.getText().equals("") || inputName.getText().equals("") ||
 			   inputHp == null || inputName == null) {
 				
