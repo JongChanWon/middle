@@ -11,6 +11,11 @@ import kr.or.ddit.shop.vo.prod.ProdVO;
 public class DisplayProdServiceImpl extends UnicastRemoteObject implements IDisplayProdService {
 
 
+	protected DisplayProdServiceImpl() throws RemoteException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public List<ProdVO> sortBySold() throws RemoteException {
 		// TODO Auto-generated method stub
