@@ -19,6 +19,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import kr.or.ddit.shop.service.login.ILoginService;
 import kr.or.ddit.shop.vo.member.MemAllVO;
+import kr.or.ddit.shop.vo.member.MemDetailVO;
 import javafx.scene.control.Button;
 
 public class FindPwController implements Initializable{
@@ -32,9 +33,9 @@ public class FindPwController implements Initializable{
 	
 	private Registry reg;
 	private ILoginService loginService;
-	private MemAllVO mv = new MemAllVO();
+	private MemDetailVO mv = new MemDetailVO();
 	
-	List<MemAllVO> list = new ArrayList<MemAllVO>();
+	List<MemDetailVO> list = new ArrayList<MemDetailVO>();
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -54,13 +55,23 @@ public class FindPwController implements Initializable{
 		// 확인 눌렀을때 정보 일치하면 아이디를 메일로 보냄
 		btnConfirm.setOnAction(e->{
 			//System.out.println("ok");
-			if(inputID.getText().equals("") || inputName.getText().equals("") || inputHp.getText().equals(" ") ||
+			String memId = inputID.getText();
+			String memName = inputName.getText();
+			String memHp = inputHp.getText();
+			
+			if(memId.equals("") || memName.equals("") || memHp.equals("") ||
 			   inputID == null || inputName == null || inputHp == null) {
 				
 				errMsg("Input Error", "정보를 입력하지 않았습니다. 다시입력해주세요!!");
 				return;
 			}
+			
+			if(memId.equals(mv) && memName.equals(mv) && memHp.equals(mv)) {
+				infoMsg("Input info", "회원님의 정보는!!");
+				
+			}
 		});
+		
 		// 취소 눌렀을 때 전화면으로 이동
 		btnCancel.setOnAction(e->{
 			Stage stage = (Stage) btnCancel.getScene().getWindow();

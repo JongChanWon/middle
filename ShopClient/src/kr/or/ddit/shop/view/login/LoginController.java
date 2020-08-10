@@ -96,9 +96,15 @@ public class LoginController implements Initializable{
 				System.out.println("회원 없음");
 			}
 			
+			//1. 인풋 값이 비었는지 아닌지
+			//2. 가져온 값이 널인지 아닌지
+			//3. 가져온 값과 입력받은 값이 같은지 아닌지
 			
 			System.out.println("진입전");
 //			
+			System.out.println(inputPW.getText());
+			if(!inputPW.getText().equals("") && !inputID.getText().equals("")) {
+				
 			if(memID.equals(mv.getMem_mail())  && memPW.equals(mv.getMem_pw())) {
 				System.out.println("진입 후");
 				infoMsg("★Login Success★", "챠니 옷가게에 오신걸 환영합니다!!");
@@ -106,6 +112,9 @@ public class LoginController implements Initializable{
 			   inputPW.getText().equals(" ") || inputPW.getText() == null) {
 				errMsg("Login Error", "아이디 OR 비밀번호를 입력하지 않으셨습니다");
 				return;
+			}
+			}else {
+				System.out.println("널 널 시발");
 			}
 			
 			/*mv.setMem_mail(memID);

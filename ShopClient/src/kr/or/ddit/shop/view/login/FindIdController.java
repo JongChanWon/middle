@@ -1,5 +1,6 @@
 package kr.or.ddit.shop.view.login;
 
+import java.awt.SecondaryLoop;
 import java.net.URL;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -49,14 +50,14 @@ public class FindIdController implements Initializable{
 			String memHp = inputHp.getText();
 			String memName = inputName.getText();
 			
-			if(inputHp.getText().equals("") || inputName.getText().equals("") ||
+			if(memHp.equals("") || memName.equals("") ||
 			   inputHp == null || inputName == null) {
 				
 				errMsg("Input Error", "정보를 입력하지 않았습니다. 다시입력해주세요!!");
 				return;
 			}
 			
-			if(inputHp.getText().equals(mv)) {
+			if(memHp.equals(mv) && memName.equals(mv)) {
 				
 			}
 		});
